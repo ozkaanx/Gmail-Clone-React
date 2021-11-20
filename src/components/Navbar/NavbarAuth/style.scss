@@ -1,0 +1,49 @@
+.navbar-auth {
+  display: flex;
+  position: relative;
+  flex: 1 auto;
+  justify-content: flex-end;
+  .setting-btn,
+  .app-btn,
+  .help-btn,
+  .auth-btn {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    z-index: 1;
+    a > svg {
+      fill: #5f6368 !important;
+    }
+    &::after {
+      content: "";
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      background-color: rgb(231, 231, 231);
+      border-radius: 50%;
+      opacity: 0;
+      z-index: -1;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  .auth-btn {
+    position: relative;
+    > a >.btn-img {
+      background-color: blue;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      > img {
+        width: 100%;
+        height: 100%;
+        border: none;
+        object-fit: cover;
+      }
+    }
+  }
+}

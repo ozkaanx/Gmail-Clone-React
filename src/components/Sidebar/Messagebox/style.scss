@@ -1,0 +1,45 @@
+.message-box {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .message-box-icon {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .message-box-text {
+    margin-top: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    color: #737373;
+    gap: 3px;
+    .lnk {
+      cursor: pointer;
+      color: #1155cc;
+      font-weight: 500;
+    }
+  }
+}
+.message-box-bottom {
+  background-color: red;
+  width: 100%;
+  display: grid;
+  grid-template: 100% / repeat(2, 1fr);
+}
+
+@media screen and(min-width : 2400px) {
+  .message-box {
+    height: 100vh;
+  }
+}

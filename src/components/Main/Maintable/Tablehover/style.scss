@@ -1,0 +1,10 @@
+.hover-icons-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  z-index: 99;
+  > img {
+    opacity: 0.5;
+  }
+
+}

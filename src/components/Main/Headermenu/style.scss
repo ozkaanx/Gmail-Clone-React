@@ -1,0 +1,77 @@
+.header-top {
+  width: 100%;
+  height: 48px;
+  min-height: 48px;
+  padding: 5px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-between;
+  &-left {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+    gap: 25px;
+    opacity: 0.6;
+    cursor: pointer;
+    > label {
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 0;
+      > input {
+        display: none;
+        &:checked + .checkbox {
+          background-color: black;
+        }
+      }
+      .checkbox {
+        width: 17px;
+        height: 17px;
+        border: 2px solid rgb(71, 71, 71);
+        border-radius: 2px;
+      }
+    }
+    .openIcons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      > span {
+        width: 2px;
+        height: 25px;
+        background-color: rgb(230, 230, 230);
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    align-items: center;
+    margin-right: 50px;
+    > span {
+      height: 40px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      margin-right: 0px;
+      font-size: 12px;
+      opacity: 0.8;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 1px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(236, 236, 236);
+      }
+    }
+    .arrow-group {
+      position: relative;
+      display: flex;
+      gap: 30px;
+      opacity: 0.5;
+    }
+  }
+}

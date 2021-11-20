@@ -1,0 +1,21 @@
+.navbarlogo {
+  min-width: 230px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  .navbar-btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 5px;
+    color: rgb(88, 88, 88);
+    &:hover {
+      background-color: rgba(223, 223, 223, 0.637);
+    }
+  }
+}

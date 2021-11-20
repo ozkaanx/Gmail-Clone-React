@@ -1,0 +1,45 @@
+.table-icons {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  align-items: center;
+  .icons-chechox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    label {
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 0;
+      cursor: pointer;
+      > input {
+        display: none;
+        &:checked + .checkbox {
+          background-color: black;
+          opacity: 1;
+        }
+      }
+      .checkbox {
+        width: 17px;
+        height: 17px;
+        border: 2px solid rgb(71, 71, 71);
+        border-radius: 2px;
+        opacity: 0.16;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .icons-star,
+  .icon-label {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .blackstar {
+      opacity: 0.16;
+    }
+  }
+}

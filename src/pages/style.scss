@@ -1,0 +1,19 @@
+.content {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  .main {
+    display: flex;
+    &-left {
+      flex: 1;
+      background-color: white;
+      height: 100vh;
+      max-width: 256px;
+      min-width: 256px;
+    }
+    &-right {
+      flex: 2;
+      height: 100px;
+    }
+  }
+}

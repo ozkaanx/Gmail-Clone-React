@@ -1,0 +1,32 @@
+.send-button {
+  padding: 10px 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  > a {
+    width: 130px;
+    height: 48px;
+    position: relative;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+      0 1px 3px 1px rgba(60, 64, 67, 0.1);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    > span {
+      color: #3c4043;
+      font-weight: 600;
+      font-size: 14px;
+      padding-left: 10px;
+      letter-spacing: 0.5px;
+    }
+    > img {
+      padding-left: 10px;
+    }
+    &:hover {
+      box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.1),
+        0 4px 8px 3px rgba(60, 64, 67, 0.2);
+    }
+  }
+}

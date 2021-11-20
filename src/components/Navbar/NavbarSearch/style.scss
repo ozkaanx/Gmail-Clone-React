@@ -1,0 +1,39 @@
+.search-bar {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f3f4;
+  max-width: 720px;
+  width: 720px;
+  position: relative;
+  border-radius: 10px;
+  margin-left: 10px;
+  display: flex;
+  .bar-group {
+    display: flex;
+    > input {
+      width: 100%;
+      height: 46px;
+      padding: 0 60px;
+      background-color: transparent;
+      font-size: 15px;
+      
+    }
+    .search-icon,
+    .filter-icon {
+      position: absolute;
+      width: 56px;
+      height: 46px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 8px;
+
+      > svg {
+        fill: #5f6368;
+        cursor: pointer;
+      }
+    }
+    .filter-icon {
+      right: 0;
+    }
+  }
+}
