@@ -15,7 +15,7 @@
       > input {
         display: none;
         &:checked + .checkbox {
-          background-color: black;
+          background-color: #202124;
           opacity: 1;
         }
       }
@@ -27,6 +27,7 @@
         opacity: 0.16;
         &:hover {
           opacity: 1;
+          border: 3px solid black;
         }
       }
     }
@@ -40,6 +41,33 @@
     align-items: center;
     .blackstar {
       opacity: 0.16;
+    }
+  }
+
+  .icons-chechox,
+  .icons-star,
+  .icon-label {
+    &::after {
+      content: "";
+      width: 35px;
+      height: 35px;
+      background-color: #e7e7e7e5;
+      position: absolute;
+      z-index: -99;
+      border-radius: 50%;
+      left: -8px;
+      display: none;
+    }
+
+  }
+
+  .icons-chechox,
+  .icons-star,
+  .icon-label {
+    &:hover {
+      &::after {
+        display: block;
+      }
     }
   }
 }
